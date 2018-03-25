@@ -3,15 +3,19 @@
 	<meta charset="UTF-8">
 	<title>Penguin Slide</title>
 
-<!-- jQuery from CDN -->
-   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-
+<!-- bootstrap cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery from CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <!-- ////JavaScript Links////  -->	  
-	    <script type="text/javascript" src="app.js" media="screen"></script>
+	<script type="text/javascript" src="app.js" media="screen"></script>
 
 <!-- ////CSS Links////  -->	
 	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Unkempt" rel="stylesheet">
@@ -28,18 +32,35 @@
         <button>Play Again!</button>
     </div>
 
-    <div class="container">
-
-        <div class="box1">
-            <img class="racers player1" alt="penguin" src="imgs/Penguin.png">
+<div class="container">
+    <div class="row">
+        <div class=" col box  player1">
+            <img class="racers" alt="penguin" src="imgs/Penguin.png">
         </div>
-
-        <div class="box2">
-            <img class="racers player2" alt="penguin" src="imgs/Penguin.png">
-        </div>
-
     </div>
+    <div class="row">
+        <div class=" col box  player2">
+            <img class="racers" alt="penguin" src="imgs/Penguin.png">
+        </div>
+    </div>
+</div>
 
+<!-- Modal -->
+<div id="myModal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Winner!</h5>
+      </div>
+      <div class="modal-body">
+        <img src="https://media.giphy.com/media/rKsnruGj8u5C8/giphy.gif"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back to the Ice</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
